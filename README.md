@@ -34,8 +34,6 @@ numpy
 matplotlib
 Pillow
 
-text
-
 ## Usage
 
 1. **Prepare your images**: Place your content image and style image in the notebook's working directory
@@ -64,10 +62,10 @@ style_path = "/content/style_image.jpg"
 result = train_style_transfer(content_path, style_path, epochs=5, steps_per_epoch=50)
 ```
 ## Code Structure
-load_img() - Loads and preprocesses images
+- load_img() - Loads and preprocesses images
 
-get_vgg_layers() - Creates VGG19 model with specified layer outputs
+- get_vgg_layers() - Creates VGG19 model with specified layer outputs
 
-StyleContentModel - Custom model for extracting style and content features with Gram matrix computation
+- StyleContentModel - Custom model for extracting style and content features with Gram matrix computation
 
-train_style_transfer() - Main training loop implementing the optimization
+- train_style_transfer() - Main training loop implementing the optimization
