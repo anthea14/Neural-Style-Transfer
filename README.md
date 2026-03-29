@@ -29,11 +29,12 @@ The implementation uses:
 - Visual comparison of content, style, and result images
 
 ## Requirements
+```
 tensorflow
 numpy
 matplotlib
 Pillow
-
+```
 ## Usage
 
 1. **Prepare your images**: Place your content image and style image in the notebook's working directory
